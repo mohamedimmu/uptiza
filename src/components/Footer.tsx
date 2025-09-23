@@ -9,7 +9,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground rounded-md m-4">
-      <div className="container mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-y-8 gap-x-12">
           {/* About Section */}
           <div className="lg:col-span-3 col-span-1">

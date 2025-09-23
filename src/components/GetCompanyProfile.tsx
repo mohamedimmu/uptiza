@@ -1,15 +1,16 @@
+"use client";
+
 import React from "react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { Download } from "lucide-react";
-import Image from "next/image";
+import { Globe } from "./ui/globe";
 
 export default function GetCompanyProfile() {
   return (
     <section className="mx-auto max-w-7xl px-4">
-      {/* Company Profile Section */}
       <section className="mb-16 md:mb-24">
-        <Card className="bg-primary/10 overflow-hidden p-0">
+        <Card className="bg-primary/5 overflow-hidden p-0">
           <div className="grid md:grid-cols-2 items-center">
             <div className="p-8 md:p-12">
               <h2 className="text-3xl md:text-4xl font-bold font-archivo font-headline mb-4">
@@ -19,20 +20,19 @@ export default function GetCompanyProfile() {
                 Download Uptiza&apos;s complete catalogue of services and
                 equipment.
               </p>
-              <Button size="lg">
-                <Download className="mr-2 h-5 w-5" />
-                Download PDF
-              </Button>
+              <a href="/catalogue/uptiza.pdf" download="Uptiza-Catalogue.pdf">
+                <Button size="lg" className="cursor-pointer">
+                  <Download className="mr-2 h-5 w-5" />
+                  Download PDF
+                </Button>
+              </a>
             </div>
-            <div className="relative h-64 md:h-full justify-self-end">
-              <Image
-                src="/catalogue/cover.png"
-                alt="Uptiza Catalogue Cover"
-                width={240}
-                height={240}
-                className="object-contain"
-                unoptimized
-              />
+            <div className="relative flex size-full items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-60">
+              <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent font-archivo">
+                Uptiza
+              </span>
+              <Globe className="top-16" />
+              <div className="pointer-events-none absolute inset-0 h-full  bg-[radial-gradient(circle_at_50%_120%,rgba(var(--primary-rgb),0.2),rgba(255,255,255,0))]" />
             </div>
           </div>
         </Card>

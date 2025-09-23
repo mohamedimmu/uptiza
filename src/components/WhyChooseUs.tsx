@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
                 <div className="bg-primary/10 p-2 rounded-full">
                   <item.icon className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl font-semibold font-archivo">{item.title}</h3>
                 <p className="text-muted-foreground">{item.description}</p>
               </CardContent>
             </Card>

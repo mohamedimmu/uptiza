@@ -8,13 +8,14 @@ import { ShimmerButton } from "./ui/shimmer-button";
 
 export default function Hero() {
   return (
-    <section>
-      <div className="container mx-auto px-4 py-16 md:py-24">
+    <section className="mx-auto max-w-7xl px-4">
+      <div className="py-16 md:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <TextAnimate
               animation="slideUp"
               as="h1"
+              once={true}
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-archivo"
             >
               Powerful Solutions for Heavy Lifting
@@ -59,7 +60,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="grid grid-cols-6 grid-rows-3 gap-4 h-[600px]">
-            <div className="col-span-3 row-span-2 rounded-lg overflow-hidden">
+            <div className="col-span-3 row-span-1 sm:row-span-2 rounded-lg overflow-hidden">
               <Image
                 src="/hero-section/1.png"
                 alt="Pottery making"
@@ -89,7 +90,7 @@ export default function Hero() {
                 data-ai-hint="trailer"
               />
             </div>
-            <div className="col-span-2 row-span-1 rounded-lg overflow-hidden">
+            <div className="col-span-3 sm:col-span-2 row-span-1 rounded-lg overflow-hidden">
               <Image
                 src="/hero-section/4.png"
                 alt="Hiker in mountains"
@@ -98,7 +99,7 @@ export default function Hero() {
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
               />
             </div>
-            <div className="col-span-2 row-span-1 rounded-lg overflow-hidden">
+            <div className="col-span-3 sm:col-span-2 row-span-1 rounded-lg overflow-hidden">
               <Image
                 src="/hero-section/5.png"
                 alt="Man laughing"
@@ -107,7 +108,7 @@ export default function Hero() {
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
               />
             </div>
-            <div className="col-span-2 row-span-1 rounded-lg overflow-hidden">
+            <div className="col-span-3 sm:col-span-2 row-span-1 rounded-lg overflow-hidden">
               <Image
                 src="/hero-section/6.png"
                 alt="Vineyard"

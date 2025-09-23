@@ -28,7 +28,7 @@ export default function CommitmentToSafety() {
   return (
     <section className="mx-auto max-w-7xl px-4">
       <div className="text-center mb-16 md:mb-24">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 font-archivo">
           Our Unwavering Commitment to{" "}
           <Highlighter
             isView={true}
@@ -57,7 +57,7 @@ export default function CommitmentToSafety() {
                   size={100}
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-2">{promise.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 font-archivo">{promise.title}</h3>
               <p className="text-muted-foreground">{promise.description}</p>
             </div>
           ))}
