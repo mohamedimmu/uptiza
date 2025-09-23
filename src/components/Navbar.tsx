@@ -13,7 +13,11 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 
-export default function Navbar() {
+type NavbarProps = {
+  onGetQuoteClick: () => void;
+};
+
+export default function Navbar({ onGetQuoteClick }: NavbarProps) {
   const pathname = usePathname();
   const navLinks = [
     { href: "/", label: "Home" },
@@ -65,7 +69,10 @@ export default function Navbar() {
             {/* CTA Button & Mobile Menu */}
             <div className="flex items-center justify-end basis-1/4">
               <div className="hidden md:block">
-                <Button className="bg-primary text-background hover:bg-primary/90 font-semibold">
+                <Button
+                  onClick={onGetQuoteClick}
+                  className="bg-primary text-background hover:bg-primary/90 font-semibold"
+                >
                   Get a Quote
                 </Button>
               </div>
@@ -94,7 +101,10 @@ export default function Navbar() {
                         </SheetClose>
                       ))}
                       <SheetClose asChild>
-                        <Button className="w-full bg-primary text-background hover:bg-primary/90 font-semibold">
+                        <Button
+                          onClick={onGetQuoteClick}
+                          className="w-full bg-primary text-background hover:bg-primary/90 font-semibold"
+                        >
                           Get a Quote
                         </Button>
                       </SheetClose>

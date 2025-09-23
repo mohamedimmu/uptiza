@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import AppWrapper from "@/components/AppWrapper";
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -34,11 +33,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${archivo.variable} ${inter.variable} antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <AppWrapper>{children}</AppWrapper>
       </body>
     </html>
   );
