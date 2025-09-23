@@ -9,6 +9,7 @@ import {
   Truck,
 } from "lucide-react";
 import { Highlighter } from "./ui/highlighter";
+import { cn } from "@/lib/utils";
 
 const whyChooseUsItems = [
   {
@@ -45,17 +46,23 @@ const whyChooseUsItems = [
   },
 ];
 
-export default function WhyChooseUs() {
+export default function WhyChooseUs({
+  className,
+  marginBottom = true,
+}: {
+  className?: string;
+  marginBottom?: boolean;
+}) {
   return (
-    <section className="max-w-7xl mx-auto px-4">
-      <div className="mb-16 md:mb-24 mt-24">
+    <section className={`max-w-7xl mx-auto px-4 ${className}`}>
+      <div className={cn(marginBottom && "mb-16 md:mb-24")}>
         <h2 className="text-3xl md:text-4xl font-bold text-center font-archivo mb-12">
           Why Choose&nbsp;
           <Highlighter isView={true} action="highlight" color="#f48927">
             Uptiza
           </Highlighter>
         </h2>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-8">
           {whyChooseUsItems.map((item, index) => (
             <Card
               key={index}
@@ -65,7 +72,9 @@ export default function WhyChooseUs() {
                 <div className="bg-primary/10 p-2 rounded-full">
                   <item.icon className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold font-archivo">{item.title}</h3>
+                <h3 className="text-xl font-semibold font-archivo">
+                  {item.title}
+                </h3>
                 <p className="text-muted-foreground">{item.description}</p>
               </CardContent>
             </Card>

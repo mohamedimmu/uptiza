@@ -12,11 +12,11 @@ export default function GetCompanyProfile() {
       <section className="mb-16 md:mb-24">
         <Card className="bg-primary/5 overflow-hidden p-0">
           <div className="grid md:grid-cols-2 items-center">
-            <div className="p-8 md:p-12">
-              <h2 className="text-3xl md:text-4xl font-bold font-archivo font-headline mb-4">
+            <div className="p-8 md:p-12 md:pr-2 pr-0 text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold font-archivo font-headline mb-2">
                 Get the Catalogue
               </h2>
-              <p className="text-muted-foreground text-lg mb-8 max-w-2xl">
+              <p className="text-muted-foreground text-lg mb-6 max-w-2xl">
                 Download Uptiza&apos;s complete catalogue of services and
                 equipment.
               </p>

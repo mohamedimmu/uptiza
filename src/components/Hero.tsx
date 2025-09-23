@@ -24,7 +24,7 @@ export default function Hero() {
               A modern fleet of cranes, forklifts, trailers, boom loaders, and
               excavators — ready to power projects of any scale.
             </p>
-            <div className="mt-8 flex justify-center lg:justify-start gap-4">
+            <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
               <Link href="/services">
                 <ShimmerButton
                   className="cursor-pointer py-0 !px-6 h-10"
@@ -40,21 +40,21 @@ export default function Hero() {
                 Get a Quote
               </Button>
             </div>
-            <div className="mt-12 grid grid-cols-2 md:flex md:flex-wrap justify-center lg:justify-start gap-x-6 gap-y-4 text-sm text-muted-foreground">
+            <div className="mt-12 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-4 text-muted-foreground text-sm sm:text-base">
               <div className="flex items-center gap-2">
-                <Award className="h-4 w-4 text-primary" />
+                <Award className="h-5 w-5 text-primary" />
                 <span>Trusted Since 1996</span>
               </div>
               <div className="flex items-center gap-2">
-                <Truck className="h-4 w-4 text-primary" />
+                <Truck className="h-5 w-5 text-primary" />
                 <span>Powerful Fleet</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-primary" />
+                <ShieldCheck className="h-5 w-5 text-primary" />
                 <span>Safety Assured</span>
               </div>
               <div className="flex items-center gap-2">
-                <Globe className="h-4 w-4 text-primary" />
+                <Globe className="h-5 w-5 text-primary" />
                 <span>International Trading</span>
               </div>
             </div>

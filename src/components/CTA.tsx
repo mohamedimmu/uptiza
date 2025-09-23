@@ -9,7 +9,7 @@ export default function CTA() {
     <div className="mx-auto max-w-7xl px-4">
       <Card className="mb-16 md:mb-24">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-4 md:p-6">
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold font-archivo mb-2">
               Need a Tailored Solution?
             </h3>

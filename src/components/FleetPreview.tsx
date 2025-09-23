@@ -19,7 +19,7 @@ const fleetItems = [
     imageHint: "forklift",
   },
   {
-    name: "Boom Loader Trucks",
+    name: "Boom Loader",
     description: "Upto 15 ton",
     imageUrl: "/fleets/boom-loader.png",
     imageHint: "boom loader",
@@ -59,11 +59,11 @@ export default function FleetPreview() {
           meet the demands of any construction, industrial, or logistical
           project.
         </p>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-6">
+        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-6">
           {fleetItems.map((item, index) => (
             <Card
               key={index}
-              className="overflow-hidden border-0 shadow-none hover:shadow-none text-center pt-0"
+              className="overflow-hidden border-0 shadow-none hover:shadow-none text-center py-0"
             >
               <CardContent className="p-0">
                 <div className="aspect-square relative w-full overflow-hidden rounded-lg">
@@ -71,13 +71,12 @@ export default function FleetPreview() {
                     src={item.imageUrl}
                     alt={item.name}
                     fill
-                    data-ai-hint={item.imageHint}
                     className="object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
                   />
                 </div>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold">{item.name}</h3>
-                  <p className="text-muted-foreground">{item.description}</p>
+                <div className="pt-4">
+                  <h3 className="text-lg md:text-xl font-semibold">{item.name}</h3>
+                  <p className="text-muted-foreground text-base">{item.description}</p>
                 </div>
               </CardContent>
             </Card>
