@@ -20,7 +20,7 @@ export default function GetCompanyProfile() {
                 Download Uptiza&apos;s complete catalogue of services and
                 equipment.
               </p>
-              <a href="/catalogue/uptiza.pdf" download="Uptiza-Catalogue.pdf">
+              <a href="/catalogue/Uptiza.pdf" download="Uptiza-Catalogue.pdf">
                 <Button size="lg" className="cursor-pointer">
                   <Download className="mr-2 h-5 w-5" />
                   Download PDF
