@@ -9,6 +9,9 @@ import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
@@ -86,6 +89,12 @@ export default function Navbar({ onGetQuoteClick }: NavbarProps) {
                     </Button>
                   </SheetTrigger>
                   <SheetContent side="top">
+                    <SheetHeader>
+                      <SheetTitle className="sr-only">Menu</SheetTitle>
+                      <SheetDescription className="sr-only">
+                        Navigation menu
+                      </SheetDescription>
+                    </SheetHeader>
                     <div className="grid gap-4 py-6 px-6 pt-12">
                       {navLinks.map((link) => (
                         <SheetClose asChild key={link.href}>

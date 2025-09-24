@@ -30,9 +30,9 @@ export default function CoreValues() {
           {coreValues.map((value, index) => (
             <Card
               key={index}
-              className="flex flex-row py-6 px-4 items-center gap-4 rounded-xl transition-colors"
+              className="flex flex-col md:flex-row py-6 px-4 items-center gap-4 rounded-xl transition-colors"
             >
-              <div className="p-4 bg-primary/10 rounded-full relative overflow-hidden">
+              <div className="p-4 bg-primary/10 rounded-full relative overflow-hidden flex-shrink-0">
                 <CheckCircle className="h-6 w-6 text-primary" />
                 <BorderBeam
                   colorFrom="#f48927"
@@ -41,8 +41,8 @@ export default function CoreValues() {
                   size={100}
                 />
               </div>
-              <div>
-                <h3 className="text-xl text-left font-semibold mb-2 font-archivo">
+              <div className="text-center md:text-left">
+                <h3 className="text-xl font-semibold mb-2 font-archivo">
                   {value.title}
                 </h3>
                 <span className="text-muted-foreground">

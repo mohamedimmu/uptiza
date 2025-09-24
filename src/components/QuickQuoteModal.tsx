@@ -124,10 +124,10 @@ export default function QuickQuoteModal({
     <div>
       <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogContent className="sm:max-w-[640px] !max-h-[90vh] flex-1 overflow-y-auto">
+          <DialogTitle className="text-xl sm:text-2xl font-archivo font-semibold text-center sm:text-left">
+            Request a Quick Quote
+          </DialogTitle>
           <DialogHeader>
-            <DialogTitle className="text-xl sm:text-2xl font-archivo font-semibold">
-              Request a Quick Quote
-            </DialogTitle>
             <DialogDescription>
               {equipmentName
                 ? `Interested in the ${equipmentName}? Fill out the form below.`
