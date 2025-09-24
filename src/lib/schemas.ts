@@ -7,10 +7,11 @@ export const quickQuoteSchema = z.object({
     message: "Please enter a valid phone number.",
   }),
   jobDate: z.date(),
+  interestedService: z.string().optional(),
   message: z
     .string()
-    .min(10, {
-      message: "Message must be at least 10 characters.",
+    .min(10, { 
+      message: "Message must be at least 10 characters."
     })
     .max(500, {
       message: "Message must not be longer than 500 characters.",
