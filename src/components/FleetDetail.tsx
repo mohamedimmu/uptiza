@@ -1,10 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Highlighter } from "./ui/highlighter";
 import { Card, CardContent } from "./ui/card";
 import Image from "next/image";
 import { equipmentData } from "@/lib/data";
+import { Button } from "./ui/button";
+import { ScrollArea, ScrollBar } from "./ui/scroll-area";
+
+const equipmentTypes = [
+  "All",
+  ...Array.from(new Set(equipmentData.map((item) => item.type))),
+];
 
 export default function FleetDetail() {
+  const [selectedType, setSelectedType] = useState("All");
+
+  const filteredEquipment =
+    selectedType === "All"
+      ? equipmentData
+      : equipmentData.filter((item) => item.type === selectedType);
+
   return (
     <section className="mx-auto max-w-7xl px-4">
       <div className="mb-16 md:mb-24">
@@ -14,7 +30,7 @@ export default function FleetDetail() {
               isView={true}
               action="underline"
               color="#f48927"
-              padding={8}
+              padding={2}
               strokeWidth={2}
             >
               Our Fleet:
@@ -28,8 +44,24 @@ export default function FleetDetail() {
           </p>
         </div>
 
+        <ScrollArea className="mb-6 !max-w-7xl">
+          <div className="flex gap-4 items-center justify-center px-4">
+            {equipmentTypes.map((type) => (
+              <Button
+                key={type}
+                variant={selectedType === type ? "default" : "outline"}
+                onClick={() => setSelectedType(type)}
+                className="flex-shrink-0 cursor-pointer px-4"
+              >
+                {type}
+              </Button>
+            ))}
+          </div>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
+
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-6">
-          {equipmentData.map((item) => (
+          {filteredEquipment.map((item) => (
             <Card
               key={item.id}
               className="overflow-hidden border-0 shadow-none hover:shadow-none text-center py-0 rounded-lg"

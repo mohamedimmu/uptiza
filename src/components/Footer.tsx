@@ -13,13 +13,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 gap-y-8 gap-x-12">
           {/* About Section */}
           <div className="lg:col-span-3 col-span-1">
-            <Image
-              src="/logo/vertical.png"
-              alt="Uptiza Logo"
-              width={128}
-              height={41}
-              className="mb-4"
-            />
+            <div className="relative h-32 w-32 mb-4">
+              <Image
+                src="/logo/vertical.png"
+                alt="Uptiza Logo"
+                fill
+                className="object-contain"
+                unoptimized
+              />
+            </div>
 
             <p className="text-muted-foreground mb-4 max-w-">
               Providing top-tier heavy equipment solutions with a focus on
@@ -112,7 +114,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               <a
-                href={`https://wa.me/${PHONE_NUMBER.replace(/[^0-9]/g, "")}`}
+                href={`httpshttps://wa.me/${PHONE_NUMBER.replace(/[^0-9]/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
