@@ -71,6 +71,7 @@ export default function FleetPreview() {
                     src={item.imageUrl}
                     alt={item.name}
                     fill
+                    unoptimized
                     className="object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
                   />
                 </div>

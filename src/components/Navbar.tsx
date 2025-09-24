@@ -22,7 +22,7 @@ export default function Navbar({ onGetQuoteClick }: NavbarProps) {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
-    { href: "/about-us", label: "About us" },
+    { href: "/about", label: "About us" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -41,6 +41,7 @@ export default function Navbar({ onGetQuoteClick }: NavbarProps) {
                       alt="Logo"
                       width={128}
                       height={41}
+                      unoptimized
                     />
                   </Link>
                 </div>

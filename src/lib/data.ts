@@ -5,20 +5,23 @@ export const serviceProcessData = [
   {
     step: 1,
     icon: FileText,
-    title: "Address Needs",
-    description: "Understanding the client's needs.",
+    title: "Consultation & Assessment",
+    description:
+      "Our experts work closely with you to understand your project requirements, site conditions, and timeline to recommend the most suitable equipment solutions.",
   },
   {
     step: 2,
     icon: Search,
-    title: "Propose Solution",
-    description: "Providing cost-effective solutions.",
+    title: "Equipment Selection & Planning",
+    description:
+      "Select from our comprehensive fleet of hydraulic cranes, excavators, and specialized equipment. We provide detailed specifications and on-site inspection services.",
   },
   {
     step: 3,
     icon: Wrench,
-    title: "Inspect On-Site",
-    description: "Ensuring safe and efficient operations.",
+    title: "Delivery & Project Success",
+    description:
+      "Safe and timely delivery, We ensure all safety protocols are followed and provide ongoing support throughout your project duration.",
   },
 ];
 
@@ -170,5 +173,38 @@ export const contactInfo = [
     icon: MapPin,
     title: "Location",
     value: "Dubai | Abudhabi",
+  },
+];
+
+export const coreValues = [
+  {
+    title: "Safety First",
+    description:
+      "Our top priority is the safety of our clients, our team, and the community. We adhere to the strictest safety protocols.",
+  },
+  {
+    title: "Uncompromising Quality",
+    description:
+      "We provide only the highest quality, well-maintained equipment to ensure your project runs smoothly.",
+  },
+  {
+    title: "Customer Partnership",
+    description:
+      "We work as a partner to our clients, providing expert advice and reliable service from start to finish.",
+  },
+  {
+    title: "Expertise & Experience",
+    description:
+      "With decades of combined experience, our team has the knowledge to handle any lifting or transport challenge.",
+  },
+  {
+    title: "Reliability & Timeliness",
+    description:
+      "We deliver on schedule with dependable service, ensuring your projects stay on track without delays.",
+  },
+  {
+    title: "Innovation & Continuous Improvement",
+    description:
+      "We embrace new technologies and methods to improve efficiency, safety, and customer satisfaction.",
   },
 ];

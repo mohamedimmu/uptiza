@@ -3,8 +3,8 @@ import Services from "@/components/Services";
 
 export default function ServicesPage() {
   return (
-    <div>
-      <Services />
+    <div className="mt-16 md:mt-24">
+      <Services heading="lg" />
       <FleetDetail />
     </div>
   );

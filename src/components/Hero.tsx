@@ -67,7 +67,7 @@ export default function Hero() {
                 width={800}
                 height={800}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-                data-ai-hint="crane"
+                unoptimized
               />
             </div>
             <div className="col-span-3 row-span-1 rounded-lg overflow-hidden">
@@ -77,7 +77,7 @@ export default function Hero() {
                 width={600}
                 height={400}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-                data-ai-hint="excavator"
+                unoptimized
               />
             </div>
             <div className="col-span-3 row-span-1 rounded-lg overflow-hidden">
@@ -87,7 +87,7 @@ export default function Hero() {
                 width={600}
                 height={400}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-                data-ai-hint="trailer"
+                unoptimized
               />
             </div>
             <div className="col-span-3 sm:col-span-2 row-span-1 rounded-lg overflow-hidden">
@@ -97,6 +97,7 @@ export default function Hero() {
                 width={600}
                 height={400}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
+                unoptimized
               />
             </div>
             <div className="col-span-3 sm:col-span-2 row-span-1 rounded-lg overflow-hidden">
@@ -106,6 +107,7 @@ export default function Hero() {
                 width={600}
                 height={400}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
+                unoptimized
               />
             </div>
             <div className="col-span-3 sm:col-span-2 row-span-1 rounded-lg overflow-hidden">
@@ -115,6 +117,7 @@ export default function Hero() {
                 width={600}
                 height={400}
                 className="w-full h-full object-cover"
+                unoptimized
               />
             </div>
           </div>

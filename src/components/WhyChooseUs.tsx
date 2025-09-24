@@ -69,10 +69,7 @@ export default function WhyChooseUs({
           </h2>
         ) : (
           <h2 className="text-2xl font-semibold text-center font-archivo mb-12">
-            Why Choose&nbsp;
-            <Highlighter isView={true} action="highlight" color="#f48927">
-              Uptiza
-            </Highlighter>
+            Why Choose Uptiza ?
           </h2>
         )}
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-8">

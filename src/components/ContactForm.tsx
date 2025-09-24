@@ -268,7 +268,7 @@ export default function ContactForm({ className }: { className?: string }) {
               type="submit"
               size="lg"
               variant="default"
-              className="bg-primary text-background hover:bg-primary/90 font-semibold w-full rounded-md"
+              className="bg-primary text-background hover:bg-primary/90 font-semibold w-full rounded-md mt-2"
               disabled={isSubmitting}
             >
               {isSubmitting ? (

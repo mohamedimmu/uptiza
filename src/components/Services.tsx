@@ -40,17 +40,24 @@ const services = [
   },
 ];
 
-export default function Services() {
+export default function Services({ heading = "md" }: { heading?: "lg" | "md" }) {
   return (
     <section className="mx-auto max-w-7xl px-4">
-      <div className="my-16 md:my-24">
+      <div className="mb-16 md:mb-24">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-archivo mb-4">
+          <h2
+            className={cn(
+              heading === "md" &&
+                "text-3xl md:text-4xl font-bold font-archivo mb-4",
+              heading === "lg" &&
+                "text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-archivo"
+            )}
+          >
             Our &nbsp;
             <Highlighter
               strokeWidth={2}
               isView={true}
-              action="underline"
+              action={heading === "md" ? "underline" : "highlight"}
               color="#f48927"
             >
               Services
@@ -67,7 +74,7 @@ export default function Services() {
             demands of your project.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             return (
               <Card
@@ -79,7 +86,6 @@ export default function Services() {
                     "md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto"
                 )}
               >
-                {/* <ShineBorder shineColor={"#f48927"} borderWidth={1} /> */}
                 <CardHeader className="p-0">
                   <div className="p-2 bg-primary/10 rounded-full mb-2 flex items-center justify-center mx-auto">
                     <service.icon className="h-8 w-8 text-primary" />
