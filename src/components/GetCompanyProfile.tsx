@@ -12,11 +12,11 @@ export default function GetCompanyProfile() {
       <section className="mb-16 md:mb-24">
         <Card className="bg-primary/5 overflow-hidden p-0">
           <div className="grid md:grid-cols-2 items-center">
-            <div className="p-8 md:p-12 md:pr-2 pr-0 text-center md:text-left">
+            <div className="py-6 px-0 md:px-6 lg:px-12 text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold font-archivo mb-2">
                 Get the Catalogue
               </h2>
-              <p className="text-muted-foreground text-lg mb-6 max-w-2xl">
+              <p className="text-muted-foreground text-lg mb-6 max-w-2xl mx-auto md:mx-0">
                 Download Uptiza&apos;s complete catalogue of services and
                 equipment.
               </p>
@@ -27,8 +27,8 @@ export default function GetCompanyProfile() {
                 </Button>
               </a>
             </div>
-            <div className="relative flex size-full items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-60">
-              <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent font-archivo">
+            <div className="relative flex size-full items-center justify-center overflow-hidden px-4 md:px-40 pb-40 pt-8 md:pb-60">
+              <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-center text-5xl md:text-8xl font-semibold leading-none text-transparent font-archivo">
                 Uptiza
               </span>
               <Globe className="top-16" />

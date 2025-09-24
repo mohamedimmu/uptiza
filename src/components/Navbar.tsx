@@ -80,13 +80,13 @@ export default function Navbar({ onGetQuoteClick }: NavbarProps) {
               <div className="md:hidden">
                 <Sheet>
                   <SheetTrigger asChild>
-                    <Button variant="outline" size="icon">
+                    <Button variant="ghost" size="icon">
                       <Menu className="h-6 w-6" />
                       <span className="sr-only">Open menu</span>
                     </Button>
                   </SheetTrigger>
                   <SheetContent side="top">
-                    <div className="grid gap-4 py-4">
+                    <div className="grid gap-4 py-6 px-6 pt-12">
                       {navLinks.map((link) => (
                         <SheetClose asChild key={link.href}>
                           <Link

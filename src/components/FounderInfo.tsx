@@ -20,23 +20,23 @@ export default function FounderInfo() {
         </div>
         <div className="bg-muted/30 p-8 rounded-lg">
           <div className="space-y-6">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-center sm:text-left">
               <span className="text-muted-foreground">Founded</span>
               <span className="font-semibold">1996</span>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-center sm:text-left">
               <span className="text-muted-foreground">Founder & CEO</span>
               <span className="font-semibold">Mr. Usman Hanif</span>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-center sm:text-left">
               <span className="text-muted-foreground">Location</span>
               <span className="font-semibold">Abu Dhabi, UAE</span>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-center sm:text-left">
               <span className="text-muted-foreground">Industry</span>
               <span className="font-semibold">Heavy Lifting Operations</span>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-center sm:text-left">
               <span className="text-muted-foreground">Experience</span>
               <span className="font-semibold">28+ Years</span>
             </div>

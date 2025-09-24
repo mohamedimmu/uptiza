@@ -28,19 +28,19 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <Card className="grid grid-cols-6 gap-6 bg-card rounded-3xl shadow-lg px-4">
-          <ContactInfo className="col-span-2 rounded-lg shadow-md" />
-          <ConnectWithUs className="col-span-2 rounded-lg shadow-md" />
-          <GetCompanyProfileMini className="col-span-2 rounded-lg shadow-md" />
-          <ContactForm className="col-span-6 rounded-lg shadow-md" />
-          <Card className="col-span-6 rounded-lg shadow-md px-4">
+        <Card className="grid grid-cols-1 md:grid-cols-6 gap-6 bg-card rounded-3xl shadow-lg px-4">
+          <ContactInfo className="col-span-full md:col-span-2 rounded-lg shadow-md" />
+          <ConnectWithUs className="col-span-full md:col-span-2 rounded-lg shadow-md" />
+          <GetCompanyProfileMini className="col-span-full md:col-span-2 rounded-lg shadow-md" />
+          <ContactForm className="col-span-full rounded-lg shadow-md" />
+          <Card className="col-span-full rounded-lg shadow-md">
             <WhyChooseUs
               marginBottom={false}
               innerCardRadius="rounded-xxs"
               defaultHeading={false}
             />
           </Card>
-          <ContactCTA className="col-span-6 rounded-lg shadow-md px-4" />
+          <ContactCTA className="col-span-full rounded-lg shadow-md px-4" />
         </Card>
       </div>
     </section>

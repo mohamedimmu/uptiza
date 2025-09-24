@@ -32,14 +32,14 @@ export default function AboutPage() {
             Trusted since 1996, built on commitment, quality, professionalism,
             efficiency, and safety.
           </p>
-          <div className="text-center flex items-center justify-center gap-4 mt-12">
-            <div>
+          <div className="text-center flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+            <div className="flex items-center">
               <NumberTicker
                 value={28}
                 delay={0}
-                className="font-archivo whitespace-pre-wrap text-8xl font-medium tracking-tighter text-primary mb-4"
+                className="font-archivo whitespace-pre-wrap text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-primary"
               />
-              <span className="whitespace-pre-wrap text-8xl font-medium tracking-tighter text-primary mb-4">
+              <span className="whitespace-pre-wrap text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-primary">
                 +
               </span>
             </div>
@@ -48,7 +48,7 @@ export default function AboutPage() {
               by="character"
               delay={0.5}
               once={true}
-              className="font-archivo whitespace-pre-wrap text-8xl font-medium tracking-tighter text-foreground mb-4"
+              className="font-archivo whitespace-pre-wrap text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-foreground"
             >
               Years of Experience
             </TextAnimate>
