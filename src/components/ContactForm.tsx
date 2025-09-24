@@ -103,14 +103,16 @@ export default function ContactForm({ className }: { className?: string }) {
   }
 
   return (
-    <Card className={`bg-card rounded-2xl shadow-lg border-0 h-full text-left ${className}`}>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
+    <Card
+      className={`bg-card rounded-lg shadow-lg border-0 h-full px-4 text-left ${className}`}
+    >
+      <CardHeader className="p-0">
+        <CardTitle className="flex items-center gap-2 font-archivo text-2xl">
           <Send className="w-5 h-5" />
           Send us a Message
         </CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-0">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -123,7 +125,7 @@ export default function ContactForm({ className }: { className?: string }) {
                     <FormControl>
                       <Input
                         {...field}
-                        className="bg-secondary/50 border-0 rounded-lg h-12 px-4"
+                        className="bg-secondary/50 border-0 rounded-md h-12 px-4"
                       />
                     </FormControl>
                     <FormMessage />
@@ -140,7 +142,7 @@ export default function ContactForm({ className }: { className?: string }) {
                       <Input
                         type="email"
                         {...field}
-                        className="bg-secondary/50 border-0 rounded-lg h-12 px-4"
+                        className="bg-secondary/50 border-0 rounded-md h-12 px-4"
                       />
                     </FormControl>
                     <FormMessage />
@@ -159,7 +161,7 @@ export default function ContactForm({ className }: { className?: string }) {
                     <FormControl>
                       <Input
                         {...field}
-                        className="bg-secondary/50 border-0 rounded-lg h-12 px-4"
+                        className="bg-secondary/50 border-0 rounded-md h-12 px-4"
                       />
                     </FormControl>
                     <FormMessage />
@@ -176,7 +178,7 @@ export default function ContactForm({ className }: { className?: string }) {
                       <Input
                         type="tel"
                         {...field}
-                        className="bg-secondary/50 border-0 rounded-lg h-12 px-4"
+                        className="bg-secondary/50 border-0 rounded-md h-12 px-4"
                       />
                     </FormControl>
                     <FormMessage />
@@ -196,7 +198,7 @@ export default function ContactForm({ className }: { className?: string }) {
                     defaultValue={field.value}
                   >
                     <FormControl>
-                      <SelectTrigger className="bg-secondary/50 border-0 rounded-lg h-12 px-4">
+                      <SelectTrigger className="bg-secondary/50 border-0 rounded-md h-12 px-4 w-full">
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                     </FormControl>
@@ -221,7 +223,7 @@ export default function ContactForm({ className }: { className?: string }) {
                   <FormLabel>Message *</FormLabel>
                   <FormControl>
                     <Textarea
-                      className="min-h-[120px] bg-secondary/50 border-0 rounded-xl p-4"
+                      className="min-h-[120px] bg-secondary/50 border-0 rounded-md p-4"
                       placeholder="Tell us about your project requirements, timeline, and equipment needs..."
                       {...field}
                     />
@@ -264,7 +266,9 @@ export default function ContactForm({ className }: { className?: string }) {
 
             <Button
               type="submit"
-              className="w-full bg-primary hover:bg-primary/90 h-14 rounded-lg text-base"
+              size="lg"
+              variant="default"
+              className="bg-primary text-background hover:bg-primary/90 font-semibold w-full rounded-md"
               disabled={isSubmitting}
             >
               {isSubmitting ? (

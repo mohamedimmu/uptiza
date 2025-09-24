@@ -4,6 +4,7 @@ import ContactInfo from "@/components/ContactInfo";
 import { Highlighter } from "@/components/ui/highlighter";
 import { Card } from "@/components/ui/card";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import GetCompanyProfileMini from "@/components/GetCompanyProfileMini";
 
 export default function ContactPage() {
   return (
@@ -26,11 +27,16 @@ export default function ContactPage() {
         </div>
 
         <Card className="grid grid-cols-6 gap-6 bg-card rounded-3xl shadow-lg px-4">
-          <ContactInfo className="col-span-4 rounded-2xl shadow-md" />
-          <ConnectWithUs className="col-span-2 rounded-2xl shadow-md" />
-          <ContactForm className="col-span-6 rounded-2xl shadow-md" />
-          <Card className="col-span-6 rounded-2xl shadow-md">
-            <WhyChooseUs marginBottom={false} />
+          <ContactInfo className="col-span-2 rounded-lg shadow-md" />
+          <ConnectWithUs className="col-span-2 rounded-lg shadow-md" />
+          <GetCompanyProfileMini className="col-span-2 rounded-lg shadow-md" />
+          <ContactForm className="col-span-6 rounded-lg shadow-md" />
+          <Card className="col-span-6 rounded-lg shadow-md px-4">
+            <WhyChooseUs
+              marginBottom={false}
+              innerCardRadius="rounded-xxs"
+              defaultHeading={false}
+            />
           </Card>
         </Card>
       </div>

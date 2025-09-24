@@ -66,7 +66,7 @@ export default function FleetPreview() {
               className="overflow-hidden border-0 shadow-none hover:shadow-none text-center py-0"
             >
               <CardContent className="p-0">
-                <div className="aspect-square relative w-full overflow-hidden rounded-lg">
+                <div className="aspect-square relative w-full overflow-hidden rounded-xl">
                   <Image
                     src={item.imageUrl}
                     alt={item.name}

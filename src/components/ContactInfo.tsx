@@ -4,13 +4,13 @@ import { contactInfo } from "@/lib/data";
 
 export default function ContactInfo({ className }: { className?: string }) {
   return (
-    <Card className={`bg-card border-0 rounded-2xl ${className}`}>
-      <CardHeader>
-        <CardTitle className="text-2xl font-headline">
+    <Card className={`bg-card border-0 rounded-lg px-4 ${className}`}>
+      <CardHeader className="p-0">
+        <CardTitle className="text-2xl font-archivo">
           Contact Information
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-6">
+      <CardContent className="space-y-6 p-0">
         {contactInfo.map((info) => {
           const Icon = info.icon;
           return (

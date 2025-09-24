@@ -27,7 +27,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
               <Link href="/services">
                 <ShimmerButton
-                  className="cursor-pointer py-0 !px-6 h-10"
+                  className="cursor-pointer py-0 !px-6 h-10 roumded-md"
                   borderRadius="14px"
                   background="#f48927"
                 >
@@ -60,7 +60,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="grid grid-cols-6 grid-rows-3 gap-4 h-[600px]">
-            <div className="col-span-3 row-span-1 sm:row-span-2 rounded-lg overflow-hidden">
+            <div className="col-span-3 row-span-1 sm:row-span-2 rounded-xl overflow-hidden">
               <Image
                 src="/hero-section/1.png"
                 alt="Pottery making"
