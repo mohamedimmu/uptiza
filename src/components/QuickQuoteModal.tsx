@@ -41,6 +41,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { EMAIL_ID, PHONE_NUMBER } from "@/lib/constants";
 
 const services = [
   "Equipment and Machinery Rental",
@@ -93,7 +94,7 @@ export default function QuickQuoteModal({
     `;
 
     if (data.submissionType === "email") {
-      const emailTo = "info@uptiza.com"; // Replace with the actual email
+      const emailTo = EMAIL_ID; // Replace with the actual email
       const emailSubject = `Quote Request: ${
         data.equipmentName || "General Inquiry"
       } from ${data.name}`;
@@ -101,7 +102,7 @@ export default function QuickQuoteModal({
         emailSubject
       )}&body=${encodeURIComponent(body)}`;
     } else if (data.submissionType === "whatsapp") {
-      const whatsappNumber = "971555555555"; // Replace with the actual WhatsApp number
+      const whatsappNumber = PHONE_NUMBER.replace(/\D/g, "");
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         body
       )}`;
@@ -109,7 +110,7 @@ export default function QuickQuoteModal({
     }
 
     // Simulate some processing time
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    // await new Promise((resolve) => setTimeout(resolve, 500));
 
     setIsSubmitting(false);
     onClose();

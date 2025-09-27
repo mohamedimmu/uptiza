@@ -26,6 +26,7 @@ import {
 import { Loader2, Send } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
+import { EMAIL_ID, PHONE_NUMBER } from "@/lib/constants";
 
 const detailedContactFormSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -71,7 +72,7 @@ export default function ContactForm({ className }: { className?: string }) {
     setIsSubmitting(true);
 
     const body = `
-      New Contact Form Submission:
+      Inquiry Details:
       Name: ${data.name}
       Email: ${data.email}
       Company: ${data.company || "N/A"}
@@ -81,13 +82,13 @@ export default function ContactForm({ className }: { className?: string }) {
     `;
 
     if (data.submissionType === "email") {
-      const emailTo = "info@uptiza.com"; // Replace with your email
+      const emailTo = EMAIL_ID; // Replace with your email
       const emailSubject = `New Inquiry from ${data.name}`;
       window.location.href = `mailto:${emailTo}?subject=${encodeURIComponent(
         emailSubject
       )}&body=${encodeURIComponent(body)}`;
     } else if (data.submissionType === "whatsapp") {
-      const whatsappNumber = "971555555555"; // Replace with your WhatsApp number
+      const whatsappNumber = PHONE_NUMBER.replace(/\D/g, "");
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         body
       )}`;

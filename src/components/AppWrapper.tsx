@@ -3,7 +3,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import QuickQuoteModal from "./QuickQuoteModal";
-import { Toaster } from "./ui/sonner";
+import { Toaster } from "sonner";
 
 export default function AppWrapper({ children }: { children: React.ReactNode }) {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
@@ -17,7 +17,7 @@ export default function AppWrapper({ children }: { children: React.ReactNode }) 
         isOpen={isQuoteModalOpen}
         onClose={() => setIsQuoteModalOpen(false)}
       />
-      <Toaster />
+      <Toaster richColors position="top-right" />
     </>
   );
 }

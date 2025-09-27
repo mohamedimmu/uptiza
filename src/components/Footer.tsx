@@ -83,8 +83,8 @@ export default function Footer() {
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
                 <div className="flex items-center space-x-2 h-5">
-                  <div>Dubai</div>
-                  <Separator orientation="vertical" />
+                  {/* <div>Dubai</div>
+                  <Separator orientation="vertical" /> */}
                   <div>Abudhabi</div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               <a
-                href={`httpshttps://wa.me/${PHONE_NUMBER.replace(/[^0-9]/g, "")}`}
+                href={`https://wa.me/${PHONE_NUMBER.replace(/[^0-9]/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"

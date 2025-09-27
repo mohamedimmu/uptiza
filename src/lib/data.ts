@@ -172,7 +172,7 @@ export const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    value: "Dubai | Abudhabi",
+    value: "Abudhabi",
   },
 ];
 
